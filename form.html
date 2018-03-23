@@ -5,18 +5,45 @@
     <title>FORM</title>
 </head>
 <body>
-    <h1>Test</h1>
-    <img alt="headphone_7" src="akg_2.jpeg"/>
-    <p></p>
-    <lebel>How many headphones are shown in the photo?</lebel>
-    <p></p>
-    <lebel><input type="radio" name="answer" value="1">1</lebel>
-    <p></p>
-    <lebel><input type="radio" name="answer" value="8">8</lebel>
-    <p></p>
-    <lebel><input type="radio" name="answer" value="4">4</lebel>
-    <p></p>
-    <lebel><input type="radio" name="answer" value="7">7</lebel>
-    <p></p>
+    <form method="POST" action="https://formspree.io/s.v.kleshnov@gmail.com">
+        <h1>Test</h1>
+        <img alt="headphone_7" src="akg_2.jpeg" />
+        <p></p>
+        <lebel>How many headphones are shown in the photo?</lebel>
+        <p></p>
+        <lebel><input type="checkbox" name="answer" value="1">1</lebel>
+        <p></p>
+        <lebel><input type="checkbox" name="answer" value="8">8</lebel>
+        <p></p>
+        <lebel><input type="checkbox" name="answer" value="4">4</lebel>
+        <p></p>
+        <lebel><input type="checkbox" name="answer" value="7">7</lebel>
+        <p></p>
+        <label for="client_name">Ім'я</label>
+        <input type="text" name="client_name" placeholder="Name" id="client_name" required>
+        <br>
+        <label>Прізвище</label>
+        <input type="text" name="client_sname" placeholder="Surname" required>
+        <br>
+        <label>Телефон</label>
+        <input type="text" name="client_phone" placeholder="Phone" required>
+        <br>
+        <label>Email:</label>
+        <input name="email" placeholder="Your email" type="email">
+        <br>
+        <br>
+        <label>Gender</lebel>
+    <br>  
+       <label>
+           <input type="radio" name="answer" value="M" checked>Male
+           <textarea name="message" placeholder="Your message"></textarea>
+       </label>
+        <br>
+        <label>
+           <input type="radio" name="answer" value="W" checked>Female
+       </label>
+        <br>
+        <button type="submit">Send</button>
+        </from>
 </body>
 </html>
