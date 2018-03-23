@@ -7,17 +7,17 @@
 <body>
     <form method="POST" action="https://formspree.io/s.v.kleshnov@gmail.com">
         <h1>Test</h1>
-        <img alt="headphone_7" src="akg_2.jpeg" />
+        <img alt="headphone_7" src="akg-form-photo.jpeg" />
         <p></p>
-        <lebel>How many headphones are shown in the photo?</lebel>
+        <label>How many headphones are shown in the photo?</label>
         <p></p>
-        <lebel><input type="checkbox" name="answer" value="1">1</lebel>
+        <label><input type="radio" name="headphone-number" value="1">1</label>
         <p></p>
-        <lebel><input type="checkbox" name="answer" value="8">8</lebel>
+        <label><input type="radio" name="headphone-number" value="8">8</label>
         <p></p>
-        <lebel><input type="checkbox" name="answer" value="4">4</lebel>
+        <label><input type="radio" name="headphone-number" value="4">4</label>
         <p></p>
-        <lebel><input type="checkbox" name="answer" value="7">7</lebel>
+        <label><input type="radio" name="headphone-number" value="7">7</label>
         <p></p>
         <label for="client_name">Ім'я</label>
         <input type="text" name="client_name" placeholder="Name" id="client_name" required>
@@ -33,15 +33,16 @@
         <br>
         <br>
         <label>Gender</lebel>
-    <br>  
-       <label>
-           <input type="radio" name="answer" value="M" checked>Male
-           <textarea name="message" placeholder="Your message"></textarea>
-       </label>
+        <br>  
+        <label>
+           <input type="radio" name="gender" value="M" checked>Male
+        </label>
         <br>
         <label>
-           <input type="radio" name="answer" value="W" checked>Female
-       </label>
+           <input type="radio" name="gender" value="W" checked>Female
+        </label>
+        <br>
+        <textarea name="message" placeholder="Your message"></textarea>
         <br>
         <button type="submit">Send</button>
         </from>
